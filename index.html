@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="copyofhibaq.css" />
+  <title>Jenane's Portfolio</title> <!--Title of the website-->
+</head>
+<body>
+  <nav class="nav-bar"><!--naming this section nav bar-->
+    <div id="nav-title"> <a href="#hero-section" id="nav-title-link">  <!--what does a href and id do?-->
+      <h2 style="font-size: xx-large; align-content: center;">Jenane </h2> <!--I tried to align the items to the centre-->
+    </a></div>
+    <ul class="nav-list">  <!--what does this line do?-->
+      <li><a href="#resume/cv" class="nav-links">Resume/CV</a></li>
+      <li><a href="#skills-section" class="nav-links">Skills</a></li>
+      <li><a href="#about-section" class="nav-links">About</a></li>
+      <li><a href="#Experiences-section" class="nav-links">Experiences</a></li>
+      <li><a href="#contact-section" class="nav-links">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="hero-section"> <!--what does section id mean?-->
+    <div>
+      <header id="hero-header">
+        <h1 class="section-header">Hello I'm Jenane</h1>
+      </header>
+      <p>I'm a novice web developer from Canada. Working in the non-profit and research industry.</p>
+    </div>
+  </section>
+  <section id="about-section">
+    <div id="about-info">
+      <header>
+        <h2 class="section-header">About me! </h2>
+      </header>
+      <p>Hi again, I'm a new in-training web developer from Canda with a background in Psychology and currently working in the non-profit sector.</p>
+    </div>
+    <br>
+    <br>
+  
+    <section is="skills-section">
+      <header id="skills-section">
+        <h2 class="skills-section">Skills</h2>
+        <p>
+          Some of the languages and frameworks I am familiar with include:
+        </p>
+        <div>
+          <ul>
+            <li class="my-languages"> <!--What does this line do?-->
+              <li>javascript</li>
+           <i class></i>
+              <li>HTML</li>
+              <li>CSS</li>
+              <i class=""></i>  <!--how do add images?-->
+            </li>
+          </ul>
+        </div>
+      </header>
+    </section> 
+
+    
+    <section id="Experiences-section">
+      <div>
+        <!--anything in the experiences section goes here-->
+      </div>
+      <header>
+        <h2 class="section-header">Experiences</h2>
+      </header>
+      </section>
+      
+      <div class="grid-container"> <!--what does this line do?-->
+        <section id="contact-section">
+          <div id="contact-info">
+            <header>
+              <h2 id="contact-heading" class="section-header">Let's Connect</h2>
+            </header>
+            <p id="contact-text">
+              If you ever feel like connecting on LinkedIn or simply wish to have a brief conversation, you can
+              locate me on social media or drop me a message right here!
+            </p>
+            <div class="form-container">
+              <form action="mailto:jenanejj@gmail.com" method="post" enctype="text/plain">
+                <!-- name Field -->
+                <label for="name">Your name (required) </label><br>
+                <input type="text" class="text-input" id="name" name="contact-me" placeholder="name">
+                <br>
+                <!-- email Field-->
+                <label for="email">Email:</label><br>
+                <input class="text-input" type="email" id="email" name="contact-me" placeholder="email">
+                <br>
+                <!-- message field -->
+                <label for="message"> Your Message:</label> <br>
+                <textarea id="message" name="contact-me" placeholder="message"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="SEND MESSAGE">
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <p id="footer-text">Front end developed by Jenane</p>
+      </footer>
+</body>
+</html>
