@@ -1,107 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="copyofhibaq.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- link to font share --> <!--how to change the fonts?-->
+  <link href="https://api.fontshare.com/v2/css?f[]=pally@400,700,500&display=swap" rel="stylesheet">
+  <!-- link to cdjns font-awesome library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- cdnjs link to devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- adding favicon to browser -->
+  <link rel="icon" type="image/x-icon" href="./docs/strawberry-favicon.ico">
   <title>Jenane's Portfolio</title> <!--Title of the website-->
 </head>
+
 <body>
+
+  <!-- navigation menu -->
   <nav class="nav-bar"><!--naming this section nav bar-->
-    <div id="nav-title"> <a href="#hero-section" id="nav-title-link">  <!--what does a href and id do?-->
-      <h2 style="font-size: xx-large; align-content: center;">Jenane </h2> <!--I tried to align the items to the centre-->
-    </a></div>
+    <div id="nav-title">
+      <a href="#hero-section" id="nav-title-link">  <!--what does a href and id do?-->
+        <h2>Jenane</h2> <!--I tried to align the items to the centre-->
+      </a>
+    </div>
+    <!-- nav items -->
     <ul class="nav-list">  <!--what does this line do?-->
-      <li><a href="#resume/cv" class="nav-links">Resume/CV</a></li>
+      <li><a href="#experiences-section" class="nav-links">Resume/CV</a></li>
       <li><a href="#skills-section" class="nav-links">Skills</a></li>
       <li><a href="#about-section" class="nav-links">About</a></li>
-      <li><a href="#Experiences-section" class="nav-links">Experiences</a></li>
+      <li><a href="#experiences-section" class="nav-links">Experiences</a></li>
+      <!--<li><a href="book-recommendation-section" class="nav-links">Book Recommendations</a></li> !--> 
       <li><a href="#contact-section" class="nav-links">Contact</a></li>
     </ul>
   </nav>
-  <section id="hero-section"> <!--what does section id mean?-->
+
+  <!-- hero section -->
+  <section id="hero-section"> <!--what does section id mean? its a css identifier-->
     <div>
       <header id="hero-header">
         <h1 class="section-header">Hello I'm Jenane</h1>
       </header>
-      <p>I'm a novice web developer from Canada. Working in the non-profit and research industry.</p>
+      <p>I'm a novice web developer from Canada. Currently working in the non-profit and research industry.
+        </p>
     </div>
   </section>
+
+  <!-- about section -->
   <section id="about-section">
+    <header>
+      <h2 class="section-header">About me!</h2>
+    </header>
+    <!-- container for text in the about section -->
     <div id="about-info">
-      <header>
-        <h2 class="section-header">About me! </h2>
-      </header>
-      <p>Hi again, I'm a new in-training web developer from Canda with a background in Psychology and currently working in the non-profit sector.</p>
+      <img src="images/image-for-website.jpeg" alt="picture of me" width: 70% height:100%>
+      <p>Hi again, I'm a new in-training web developer from Canda with a background in Psychology and currently working in the non-profit sector.  I am an empathetic impact professional dedicated to understanding and reducing barriers faced by underrepresented communities. My life purpose is to work with local community-driven nonprofits and social enterprises using research to understand the experiences of youth, women and racialized communities. I have four years of professional experience in the non-profit sector, gaining strong skills in public-speaking, research and project management. I have extensive experience working with underrepresented communities including Science Engagement Programs and Youth Culture Inc. As a lifelong learner and critical thinker, I am always looking to educate and improve myself through new experiences and opportunities. I am always curious and ready to take on new challenges. I am a team-player always ready to listen and learn from my colleagues. </p>
     </div>
-    <br>
-    <br>
   
-    <section is="skills-section">
-      <header id="skills-section">
-        <h2 class="skills-section">Skills</h2>
+
+    <!-- skills section -->
+    <section id="skills-section">
+      <div>
+        <header>
+          <h2 class="section-header">Skills</h2>
+        </header>
         <p>
           Some of the languages and frameworks I am familiar with include:
         </p>
         <div>
           <ul>
-            <li class="my-languages"> <!--What does this line do?-->
-              <li>javascript</li>
-           <i class></i>
-              <li>HTML</li>
-              <li>CSS</li>
-              <i class=""></i>  <!--how do add images?-->
+            <li class="my-languages">
+              <!-- devicon icon for html -->
+              <i class="devicon-html5-plain"></i>
+              HTML
+            </li>
+            <li class="my-languages">
+              <!-- devicon icon for css -->
+              <i class="devicon-css3-plain"></i>
+              CSS
+            </li>
+            <li class="my-languages">
+              <!-- devicon icon for javascript -->
+              <i class="devicon-javascript-plain"></i>
+              Javascript
+            </li>
+            <li class="my-languages">
+              <i class="devicon-css3-plain"></i>
+              Microsoft Excel 
+            </li>
+            <li class="my-languages">
+              <i class="devicon-css3-plain"></i>
+              Raiser's Edge 
+            </li>
+            <li class="my-languages">
+              <i class="devicon-css3-plain"></i>
+              Constant Contact 
             </li>
           </ul>
         </div>
-      </header>
+      </div>
     </section> 
 
-    
-    <section id="Experiences-section">
+    <!-- experiences section -->
+    <section id="experiences-section">
       <div>
-        <!--anything in the experiences section goes here-->
+        <header>
+          <h2 class="section-header">Experiences</h2>
+        </header>
+        <h3>Volunteer Management</h3>
+        <p>Experienced Volunteer Coordinator that worked for York University, Youth Culture Inc and YWCA Toronto</p>
+        <h3>Qualitative Research</h3>
+        <p>Aspiring research assistant! Previously worked at the Dahdaleh Insitute for Global Health Research and Toronto Metropolitan University.</p>
+      </div>  
+    </section>
+
+    <!--Resume/CV section-->
+<section id="resume-CV">
+  <div id="resume">
+    <header>
+      <div class="resume-pdf">
+        <p>For more information, please view my<a href="images/Jenane Jeyaseelan J.J Resume .pdf" class="resume-link"> resume </a></p></div>
+    </header>
+  </div>
+
+  <!--Book Recommendation section-->
+ <!-- <section id="book-recommendation-section"></section> !-->
+ <!-- <display: flex;> </display:> 
+  <header>
+    <h2 class="section header"> Books I Recommend</h2>
+  </header>
+<div class="grid-container">
+ Book number 1-->
+ <!--<div class="grid item"> 
+    <div>
+      <img src="images/book-happiness-equation-large.png" alt="cover of the Happiness equation" style="max-width: 70%;max-height: 70%;">
+ Book Number 2-->     
+<!-- <div class="grid item"> !--> 
+ <!-- <div> !--> 
+  <!--  <img src="images/Aging with Grace.jpeg" alt="book cover of Aging with Grace" style="max-width: 50%;max-height: 50%;"> !--> 
+  </div>
+ </div>
+    </div>
+  </div>
+</div> 
+    <!-- project section -->
+  <section id="projects-section">
+    <header>
+      <h2 class="section-header">My Projects!</h2>
+    </header>
+    <div class="grid-container">
+      <!-- project #1 -->
+      <!-- add link to future project here -->
+     <div class="grid-item">
+      <div>
+      <embed src="images/website photo PDF.pdf" type="application/pdf" width="100%" height="100%">
+     </div>
+        
+        
+        <!-- project header, description, and tech-stack -->
+        <div class="project-text">
+          <h3>Calculator Project</h3>
+          <p id="project-description"> Created calculator using HTML, CSS and Javascript</p>
+          <ul>
+            <li class="tech-stack-item">HTML</li>
+            <li class="tech-stack-item">
+              CSS
+            </li>
+          </ul>
+        </div>
       </div>
+    </a>
+
+      <!-- project #2 -->
+      <div class="grid-item">
+        <!-- project image container -->
+        <div>
+          <img src="./images/Image 2023-09-16 at 9.40 PM (1).jpeg" alt="project sign" style="max-width:100%;
+          max-height:100%" ;>
+        </div>
+        <!-- project header, description, and tech-stack -->
+        <div class="project-text">
+          <h3>Project #2</h3>
+          <p id="project-description"> Insert Project Description Here</p>
+          <ul>
+            <li class="tech-stack-item">HTML</li>
+            <li class="tech-stack-item">CSS</li>
+            <li class="tech-stack-item">Javascript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+  <!-- contact me -->
+  <section id="contact-section">
+    <div id="contact-info">
       <header>
-        <h2 class="section-header">Experiences</h2>
+        <h2 id="contact-heading" class="section-header">Let's Connect </h2>
       </header>
-      </section>
-      
-      <div class="grid-container"> <!--what does this line do?-->
-        <section id="contact-section">
-          <div id="contact-info">
-            <header>
-              <h2 id="contact-heading" class="section-header">Let's Connect</h2>
-            </header>
-            <p id="contact-text">
-              If you ever feel like connecting on LinkedIn or simply wish to have a brief conversation, you can
-              locate me on social media or drop me a message right here!
-            </p>
-            <div class="form-container">
-              <form action="mailto:jenanejj@gmail.com" method="post" enctype="text/plain">
-                <!-- name Field -->
-                <label for="name">Your name (required) </label><br>
-                <input type="text" class="text-input" id="name" name="contact-me" placeholder="name">
-                <br>
-                <!-- email Field-->
-                <label for="email">Email:</label><br>
-                <input class="text-input" type="email" id="email" name="contact-me" placeholder="email">
-                <br>
-                <!-- message field -->
-                <label for="message"> Your Message:</label> <br>
-                <textarea id="message" name="contact-me" placeholder="message"></textarea>
-                <br>
-                <br>
-                <input type="submit" value="SEND MESSAGE">
-              </form>
-            </div>
-          </div>
-        </section>
+      <p id="contact-text">
+        Please feel free to connect with me via LinkedIn or using the submit button below!
+      </p>
+      <div id="icon-container">
+        <a href="https://github.com/hibaqw" class="contact-icons"><i class="fa-brands fa-github"
+            style="color: black;"></i></a>
+        <a href="https://www.linkedin.com/in/jenanejeyaseelan57" class="contact-icons"><i class="fa-brands fa-linkedin"
+            style="color: black;"></i></a>
       </div>
-      
-      <footer>
-        <p id="footer-text">Front end developed by Jenane</p>
-      </footer>
+
+   
+    <div class="form-container">
+      <form action="mailto:jenanejj@gmail.com" method="post" enctype="text/plain">
+        <!-- name Field -->
+        <label for="name">Your name (required) </label><br>
+        <input type="text" class="text-input" id="name" name="contact-me" placeholder="name">
+        <br>
+        <!--phone number field-->
+        <label for="phone">Phone Number:</label> <br>
+        <input class="text input" type="phone number" id="phone number" name="contact-me" placeholder="phone number">
+        <br>
+        <!-- email Field-->
+        <label for="email">Email:</label><br>
+        <input class="text-input" type="email" id="email" name="contact-me" placeholder="email">
+        <br>
+        
+        <!-- message field -->
+        <label for="message"> Your Message:</label> <br>
+        <textarea id="message" name="contact-me" placeholder="message"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="SEND MESSAGE">
+      </form>
+    </div>
+  </section>
+  
+  <!-- footer section -->
+  <footer>
+    <p id="footer-text">Front end developed by Jenane</p>
+  </footer>
+
 </body>
 </html>

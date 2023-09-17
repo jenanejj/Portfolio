@@ -1,70 +1,76 @@
 /* without this background colours/images will not cover full screen width */
 body {
-  margin: 0;
+  /*margin: 150px; */ 
+  background-color: burlywood; 
+  text-align: left;
+  padding:0%; 
+  scroll-behavior: smooth;
 }
 
 .nav-bar{
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  background-color:wheat; 
+  background-color: bisque; 
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-right: 250px;
+  flex-wrap: wrap;
+  /*align-items: center;*/ 
 }
-
-/* setting background color */
-body {
-  background-color:cornflowerblue;
-}
-
-#hero-section,#about-section,#Experiences-section, #contact-section{ /*trying add space in the navigation bar */ 
-  margin-top: 109px;
-} 
-
-/* I want to put the about section, skill section and experiences into columns 
-.column {
-  float:left;
-  width: 33.33%; 
-} 
-
-.row:after {
-  content:"";
-  display:table;
-  clear:both;
-}  */
-
-/* @media screen and (max-width:600px) {
-  .column {
-    width:100%
-  }
-} */
-
-/* setting background-color for contact section
-#contact-section {
-background-color: bisque;
-display: flex; 
-flex-direction: column-reverse;
-line-height:10%; 
-I want the comment section to be on the bottom
-} */
-
-/* ul  {
-  ensures underline is removed for all anchor tags in navbar
-  list-style: none;
-} */
 
 .nav-list {
-  /* increase size of margin-right of unordered list by 5% ( 5% of parent's width) */
-  margin-right: 5%;
+  /* increase size of margin-right of unordered list by 5% ( 5% of parent's width) 
+  margin-right: 5%; */ 
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
 }
 
-#nav-title,
-#about-info {
-  /* applying margin-left 5% to perfectly align portfolio and about me heading and text along left side of webpage
-  */
-  margin-left: 5%;
+.nav-list li {
+  padding: 0px;
+  display: flex;
+  flex: center; /*how do I center my name?*/ 
+}
+
+.nav-list a:hover {
+  color: black;
+}
+
+#hero-section, #about-section, #skills-section, #experiences-section, #project-section, #contact-section{
+  margin-top: 100px;
   text-align: left;
+} 
 
-
+/* setting background-color for contact section */
+#contact-section {
+  background-image: url('./docs/vecteezy_plaid-pattern-seamless-repeat-vector-in-pink-and-white_.jpg');
+  background-repeat: no-repeat;
 }
+
+ul  {
+  /* ensures underline is removed for all anchor tags in navbar*/
+  list-style: none;
+}
+
+#about-info img {
+  height: 250px; 
+  margin-right: 10px; 
+}
+
+#about-info {
+  display: flex;
+  flex-direction: row;
+}
+
+/* #nav-title,
+#about-info {
+  applying margin-left 5% to perfectly align portfolio and about me heading and text along left side of webpage
+ 
+  margin-left: 5%;
+
+} */
 
 li>a,
 #nav-title-link {
@@ -74,7 +80,7 @@ li>a,
 }
 
 
-#nav-title-link>h2, h1{
+#nav-title-link,h2, h1{
   font-weight: 700;
 }
 
@@ -83,14 +89,14 @@ h1{
 }
 
 h2.section-header, h1,.nav-links, #nav-title-link, p {
-  color:#000; 
+  color: black; 
 }
 
 
 #hero-header>h1 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #A8DF8E;
+  border-right: .15em solid black;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -123,25 +129,29 @@ h2.section-header, h1,.nav-links, #nav-title-link, p {
   }
 
   50% {
-    border-color: #A8DF8E;
+    border-color: black;
   }
 }
 
+a:hover {
+  cursor: pointer;
+}
 
-.nav-bar, ul,
+/* .nav-bar, ul,
 #hero-section,
 #about-section,
-#Experiences-section,
+#projects-section,
 #contact-section,#image-container,#icon-container, .project-text, .my-languages, footer
 {
-  /* applying flex-box */
-  display: flex;
   
-}
+} */
+
 .nav-bar
 {
   /* ensures that content inside nav-bar is spaced */
   justify-content: space-between;
+  width: 100%; 
+  text-align: left;
 }
 
 ul {
@@ -151,21 +161,18 @@ ul {
   width: 25%;
   /* align items vertically in the center of ul container*/
 }
-ul,#hero-section,
+
+/* ul,#hero-section,
 #about-section,
-#Experiences-section,
+#projects-section,
 #contact-section,#icon-container, .project-text, .my-languages{
   align-items: center;
-
-}
+  
+} */
 
 body {
   font-family:'Pally', sans-serif;
 }
-
-
-
-
 
 .nav-links, h2.section-header
 {
@@ -195,35 +202,41 @@ h2.section-header{
   left: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  background-color: #A8DF8E;
+  background-color: burlywood; 
 }
 
 .nav-links:hover:before {
   visibility: visible;
   width: 100%;
 }
-
+/* 
 #hero-section,
 #about-section,
 #projects-section,
-#contact-section {
-  /* 100vh = 100% of view port's height i.e desktop screen */
-  height: 100vh;
-}
+#contact-section 
+#skills-section,
+#experiences-section {
+  100vh = 100% of view port's height i.e desktop screen
+  height: 10vh;
+} */
 
 #hero-section{
   justify-content: center;
 }
 
-#hero-section, #Experiences-section, .project-text, .my-languages, #contact-section, #grid-container {
-  flex-direction: column;
-}
+/* #hero-section, #projects-section, .project-text, .my-languages {
+  display: flex;
+  flex-direction: row;
+} */
+
+
 #hero-section > p {
    
   font-size: x-large;
 }
 
-#about-info>p, #contact-info>p{
+
+#contact-info>p{
   /* specifies height of line */
   line-height: 2;
   font-size: large;
@@ -231,12 +244,11 @@ h2.section-header{
 
 #about-info {
   /* width of about-info is 85% of parent */
-  width: 100%
+  width: 85%
 }
 
 #contact-info  {
   width: 40%;
-  line-height: 40%;
 }
 
 #image-container {
@@ -246,9 +258,9 @@ h2.section-header{
 }
 
 #image-container>img {
-  border-radius: 25px;
-  width: 35%;
-  height: 35%;
+  border-radius: 50px;
+  width: 50%;
+  height: 50%;
   /* all animations (scaling) will be applied on image will be animated over a duration of 0.2 seconds */
   transition: all .2s ease-in-out;
 }
@@ -262,16 +274,15 @@ h2.section-header{
 
 #contact-section {
   justify-content: space-around;
-
 }
 
 .my-languages,#contact-heading, #contact-text, #project-description, h3, form, .project-text > ul{
-  color:#000;
+  color: black;
 }
 
 
 input,textarea{
-  border: 2px solid #A8DF8E;
+  border: 2px solid black;
 }
 input,textarea, .grid-item{
   border-radius: 5px;
@@ -291,16 +302,16 @@ width: 400px;
 }
 input[type="submit"]{
   padding: 15px 50px;
-  color:white; 
-  border: black; 
-  background-color: cornflowerblue; 
+  color: black; 
+  border: none;
+  background-color: blanchedalmond;
 }
 
 input[type="submit"]:hover{
   /* change submit button color on hover */
   background-color: #fff;
-  color: color cornflowerblue;
-  border: 2px solid cornflowerblue; 
+  color:black; 
+  border: 2px solid black;
 }
 textarea{
   height: 200px;
@@ -313,28 +324,37 @@ textarea{
 }
 
 footer{
-  display: column;
   justify-content: center;
-  background-color: #FFE5E5;
+  background-color: burlywood;
 }
 #footer-text{
   color: #000;
-}
+} 
 
-/*what does this code do?*/ 
+
+/*#book-recommendation-section {
+  display:flex;
+  flex: 1;
+  margin-right: 10px; 
+} */ 
+
 .grid-container{
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr 1fr;
-  height: 15%;
-  width: 55%;
+  height: 50%;
+  width: 50%;
 }
 
 .grid-item{
-  background-color: #FFE5E5;
-} 
-
-/*what does this line do?*/ 
+  background-color: beige;
+}
 .tech-stack-item{
   margin: 0px 5px;
-}
+} 
+
+/*.grid-container{
+  height: auto;
+  width:fit-content;
+} */ 
+
