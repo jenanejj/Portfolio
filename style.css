@@ -340,9 +340,9 @@ footer{
 
 .grid-container{
   display: grid;
-  gap: 4rem;
+  gap: 6rem;
   grid-template-columns: 1fr 1fr;
-  height: 50%;
+  height: 8%;
   width: 50%;
 }
 
@@ -358,3 +358,6 @@ footer{
   width:fit-content;
 } */ 
 
+.website {
+  height: 60%;
+}
