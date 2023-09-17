@@ -27,7 +27,7 @@
       </a>
     </div>
     <!-- nav items -->
-    <ul class="nav-list">  <!--what does this line do?-->
+    <ul class="nav-list">  
       <li><a href="#experiences-section" class="nav-links">Resume/CV</a></li>
       <li><a href="#skills-section" class="nav-links">Skills</a></li>
       <li><a href="#about-section" class="nav-links">About</a></li>
@@ -43,7 +43,7 @@
       <header id="hero-header">
         <h1 class="section-header">Hello I'm Jenane</h1>
       </header>
-      <p>I'm a novice web developer from Canada. Currently working in the non-profit and research industry.
+      <p>I'm a novice web developer based in Toronto , Canada. I'm currently working in the non-profit and research industry. I have extensive experience working in academia and institutions dedicated to empowering the lives of women, girls and gender diverse people.
         </p>
     </div>
   </section>
@@ -55,9 +55,26 @@
     </header>
     <!-- container for text in the about section -->
     <div id="about-info">
-      <img src="images/image-for-website.jpeg" alt="picture of me" width: 70% height:100%>
-      <p>Hi again, I'm a new in-training web developer from Canda with a background in Psychology and currently working in the non-profit sector.  I am an empathetic impact professional dedicated to understanding and reducing barriers faced by underrepresented communities. My life purpose is to work with local community-driven nonprofits and social enterprises using research to understand the experiences of youth, women and racialized communities. I have four years of professional experience in the non-profit sector, gaining strong skills in public-speaking, research and project management. I have extensive experience working with underrepresented communities including Science Engagement Programs and Youth Culture Inc. As a lifelong learner and critical thinker, I am always looking to educate and improve myself through new experiences and opportunities. I am always curious and ready to take on new challenges. I am a team-player always ready to listen and learn from my colleagues. </p>
+      <img src="images/image-for-website.jpeg" alt="picture of me" width: 90% height:120%>
+      <img src="images/IMG_0070.jpeg" alt="picture of me in 2023" width: 90% height:120%>
+      <img src="images/IMG_2023.jpeg" alt="picture of me in front of sunflowers" width: 90% height:120%>
+      <img src="images/IMG_2022.jpeg" alt="picture of me in sunglasses" width:90% height:120%>
+      <p>Hi again, I'm a new in-training web developer from Canda with a background in Psychology and currently working in the non-profit sector.  I am an empathetic impact professional dedicated to understanding and reducing barriers faced by underrepresented communities. My life purpose is to work with local community-driven nonprofits and social enterprises using research to understand the experiences of youth, women and racialized communities.
+      I have four years of professional experience in the non-profit sector, gaining strong skills in public-speaking, research and project management. I have extensive experience working with underrepresented communities including Science Engagement Programs and Youth Culture Inc. As a lifelong learner and critical thinker, I am always looking to educate and improve myself through new experiences and opportunities. I am always curious and ready to take on new challenges. I am a team-player always ready to listen and learn from my colleagues. </p>
+
+
     </div>
+    <script>
+      const images=document.querySelectorAll('#about-info img');
+      let index=0;
+
+      function changeImage() {
+        images[index].style.display='none';
+        index=(index + 1) % images.length;
+        images[index].style.display='block';
+      } 
+      setInterval(changeImage,1000); 
+    </script>
   
 
     <!-- skills section -->
@@ -112,7 +129,7 @@
         <h3>Volunteer Management</h3>
         <p>Experienced Volunteer Coordinator that worked for York University, Youth Culture Inc and YWCA Toronto</p>
         <h3>Qualitative Research</h3>
-        <p>Aspiring research assistant! Previously worked at the Dahdaleh Insitute for Global Health Research and Toronto Metropolitan University.</p>
+        <p>Aspiring research assistant! Previously worked at the Dahdaleh Insitute for Global Health Research. I worked on the COVID-19 Global Health Portal, please check  <a href="https://www.yorku.ca/dighr/project/covid-19-global-health-humanitarianism-portal/">here</a> to visit the website. I have also worked at the Diversity Institute at Toronto Metropolitan University.</p>
       </div>  
     </section>
 
@@ -153,7 +170,9 @@
     <div class="grid-container">
       <!-- project #1 -->
       <!-- add link to future project here -->
+      
      <div class="grid-item">
+      <a href="https://github.com/jenanejj/Portfolio"></a>
       <div class="website">
       <embed src="images/website photo PDF.pdf" type="application/pdf" width="100%" height="100%">
      </div>
@@ -161,8 +180,8 @@
         
         <!-- project header, description, and tech-stack -->
         <div class="project-text">
-          <h3>Calculator Project</h3>
-          <p id="project-description"> Created calculator using HTML, CSS and Javascript</p>
+          <h3>Website Project</h3>
+          <p id="project-description"> Created Website for the Women in Tech Program</p>
           <ul>
             <li class="tech-stack-item">HTML</li>
             <li class="tech-stack-item">
@@ -176,14 +195,15 @@
       <!-- project #2 -->
       <div class="grid-item">
         <!-- project image container -->
-        <div>
+        <div> 
+          <a href="https://github.com/jenanejj/calculator-project"></a>
           <img src="./images/Image 2023-09-16 at 9.40 PM (1).jpeg" alt="project sign" style="max-width:100%;
           max-height:100%" ;>
         </div>
         <!-- project header, description, and tech-stack -->
         <div class="project-text">
-          <h3>Project #2</h3>
-          <p id="project-description"> Insert Project Description Here</p>
+          <h3>Calculator Project</h3>
+          <p id="project-description"> Calculator Project</p>
           <ul>
             <li class="tech-stack-item">HTML</li>
             <li class="tech-stack-item">CSS</li>
@@ -192,13 +212,43 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
+
+  <!--Random Fact Generator-->
+  <!--<h3 class="randomfacts">Random Facts about me!</h3>
+  <button id="factbutton">Show me a Fact</button> 
+  <div id="factcontainer"></div>
+
+  <script src="script.js"></script> !-->  
+
+
+  <p id="randomFact">Click the button for a fact about me.</p>
+<button onclick="generateFact()">Generate Fact</button>
+<script>
+    const Fact = [
+        "I knitted over 20 scarves",
+        "I managed over 120 volunteers for an event",
+        "I know how to play piano",
+        "I know how to code in JS, HTML and CSS", 
+        "I love to learn about history"
+    ];
+
+    function generateFact() {
+        const randomIndex = Math.floor(Math.random() * Fact.length);
+        document.getElementById('randomFact').innerHTML = Fact[randomIndex];
+    }
+</script>
+
+
+
+
+
       
   <!-- contact me -->
   <section id="contact-section">
     <div id="contact-info">
       <header>
-        <h2 id="contact-heading" class="section-header">Let's Connect </h2>
+        <h2 id="contact-heading" class="section-header">Feel free to Connect with me! </h2>
       </header>
       <p id="contact-text">
         Please feel free to connect with me via LinkedIn or using the submit button below!
@@ -206,7 +256,7 @@
       <div id="icon-container">
         <a href="https://github.com/hibaqw" class="contact-icons"><i class="fa-brands fa-github"
             style="color: black;"></i></a>
-        <a href="https://www.linkedin.com/in/jenanejeyaseelan57" class="contact-icons"><i class="fa-brands fa-linkedin"
+        <a href="https://www.linkedin.com/in/jenanejeyaseelan57/" class="contact-icons"><i class="fa-brands fa-linkedin"
             style="color: black;"></i></a>
       </div>
 
@@ -231,7 +281,7 @@
         <textarea id="message" name="contact-me" placeholder="message"></textarea>
         <br>
         <br>
-        <input type="submit" value="SEND MESSAGE">
+        <input type="submit" value="SEND MESSAGE" onclick="alert('Thank You!')">
       </form>
     </div>
   </section>
@@ -239,7 +289,9 @@
   <!-- footer section -->
   <footer>
     <p id="footer-text">Front end developed by Jenane</p>
-  </footer>
+  </footer> 
+
+
 
 </body>
 </html>
